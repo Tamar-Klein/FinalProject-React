@@ -1,6 +1,6 @@
-import "../style/header.css";
 import { useDispatch, useSelector } from "react-redux";
 import type { RootState } from "../store";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
 
@@ -13,6 +13,20 @@ const Header: React.FC = () => {
             <header>
                 <h1>Welcome, {user?.name}!</h1>
                 <button onClick={() => dispatch({ type: 'auth/logout' })}>Logout</button>
+                {user?.role == "admin" && (
+                    <>
+                        <span> (Admin) </span>
+                        <span> (Admin) </span>
+                        <Link to="/dashboard/users">משתמשים</Link>
+                        <Link to="/dashboard/createStatuses">סטטוסים</Link>
+                        <Link to="/dashboard/tickets">פניות</Link>
+                    </>)
+                }
+                {(user?.role == "agent" || user?.role == "customer") && (<>
+                    <span> (Agent) </span>
+                    <Link to="/dashboard/tickets">פניות</Link>
+                     </>)
+                }
             </header>
         ) : (
             <header>

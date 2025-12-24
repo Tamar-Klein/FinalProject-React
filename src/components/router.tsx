@@ -1,4 +1,3 @@
-import "../style/router.css";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Login from "./login";
 import LoginGuard from "./guard/loginGuard";

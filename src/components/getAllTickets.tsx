@@ -1,4 +1,3 @@
-import "../style/getAllTickets.css";
 import { useEffect, useState, } from "react";
 import type { Ticket } from "../models/tickets";
 import { useDispatch, useSelector } from "react-redux";

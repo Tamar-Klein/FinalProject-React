@@ -1,12 +1,14 @@
 import { Outlet } from "react-router-dom";
-import "../style/dashboard.css";
-
+import Header from "./header";
 const Dashboard = () => {
 
 
     return (
         <>
-            <Outlet />
+            <Header />
+            <main>
+                <Outlet />
+            </main>
         </>
     );
 }

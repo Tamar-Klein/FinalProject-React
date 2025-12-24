@@ -1,4 +1,3 @@
-import "../style/register.css";
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { postLogin, postRegister } from '../services/authenticationApi';

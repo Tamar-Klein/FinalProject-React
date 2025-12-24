@@ -1,4 +1,3 @@
-import "../style/dashboard.css";
 import CustomerView from "./customerView";
 import { useSelector } from "react-redux";
 import type { RootState } from "../store";
