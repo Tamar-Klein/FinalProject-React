@@ -1,0 +1,51 @@
+/* יוקרתי, כחול-זהב, מקצועי */
+.login-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.08);
+  padding: 2.5rem;
+  border: 2px solid #ffd700;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+.login-title {
+  color: #1a237e;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+.login-label {
+  color: #0d133d;
+  font-weight: 600;
+}
+.login-input {
+  width: 100%;
+  border: 1.5px solid #e6b800;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  background: #f8fafc;
+  transition: border 0.2s;
+}
+.login-input:focus {
+  border: 2px solid #ffd700;
+  outline: none;
+}
+.login-btn {
+  background: linear-gradient(90deg, #1a237e 80%, #ffd700 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.login-btn:hover {
+  background: linear-gradient(90deg, #ffd700 20%, #1a237e 100%);
+  color: #1a237e;
+}
